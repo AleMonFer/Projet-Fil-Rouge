@@ -1,0 +1,113 @@
+/* --- CSS RESET --- */
+* {
+    margin: 0px;
+    padding: 0px;
+    font-family: 'Lucida Sans Unicode', Verdana, sans-serif;
+    color: black;
+}
+
+body {
+    overflow-x: hidden;
+    min-height: 100%;
+}
+
+h1,
+h2,
+h3,
+h4,
+nav a,
+.btnPrimary,
+.btnSquare {
+    font-family: 'Lalezar', Verdana, sans-serif;
+    text-decoration: none;
+}
+
+/* --- NAVBAR --- */
+
+nav {
+    display: flex;
+    position: sticky;
+    padding: 1% 5%;
+    top: 0px;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #313131;
+    z-index: 1;
+}
+
+nav .logo {
+    width: 15%;
+}
+
+nav a {
+    padding: 0px 10px;
+    color: white;
+    text-decoration: none;
+}
+
+/* --- NAVBAR BUTTON DESIGN --- */
+
+.btnSquare {
+    font-size: 1.5em;
+    padding: 4%;
+    border: 9px solid #E4D00A;
+    border-top: 0px;
+    transition: 0.1s ease-in-out;
+}
+
+/* --- PRIMARY BUTTON DESIGN --- */
+
+.btnPrimary,
+.btnPrimary:hover,
+.btnPrimary:active {
+    font-size: 1.9em;
+    background-color: #313131;
+    color: white;
+    border: 9px solid #E4D00A;
+    border-top: 0px;
+    padding: 1% 7%;
+    transition: 0.1s ease-in-out;
+}
+
+.btnPrimary:first-of-type,
+.btnPrimary:first-of-type:hover,
+.btnSquare,
+.btnSquare:hover {
+    border-right: 0px;
+}
+
+.btnPrimary:last-of-type,
+.btnPrimary:last-of-type:hover {
+    border-left: 0px;
+}
+
+/* --- BUTTON DESIGN HOVER AND ACTIVE --- */
+
+.btnPrimary:hover,
+.btnSquare:hover {
+    border: 7px solid #E4D00A;
+    border-top: 0px;
+}
+
+.btnPrimary:active,
+.btnSquare:active {
+    border: 1px solid #E4D00A;
+    border-top: 0px;
+}
+
+/* --- BUTTONS CONTAINER --- */
+
+.btns {
+    width: 100vw;
+    margin: 4% 0;
+    display: flex;
+    justify-content: space-evenly;
+}
+
+/* --- FOOTER --- */
+
+footer {
+    width: 100%;
+    height: 275px;
+    background-color: #313131;
+}

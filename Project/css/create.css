@@ -1,0 +1,23 @@
+#showAll{
+    display: flex;
+    flex-wrap: wrap;
+    padding: 3% 2%;
+}
+
+#showAll div{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 20%;
+    text-align: center;
+    padding: 2% 0%;
+}
+
+#showAll img{
+    width: 50px;
+}
+
+.hideMe{
+    display: none !important;
+}
